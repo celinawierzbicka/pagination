@@ -25,7 +25,7 @@ const getArray = (currentPage, allPages) => {
   return arr;
 };
 
-const PaginationTwo = ({ currentPage, allPages }: *) => {
+const PaginationTwo = ({ currentPage, allPages }) => {
   const pagesArray = getArray(currentPage, allPages) || [];
 
   if (currentPage > allPages) return <div className="wrapper">Current Page can not be greater than total number of pages.</div>;
